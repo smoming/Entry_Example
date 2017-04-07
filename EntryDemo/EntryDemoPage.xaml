@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:EntryDemo" 
+	xmlns:cEntry="clr-namespace:EntryDemo.Customer"
+	x:Class="EntryDemo.EntryDemoPage">
+
+	<ContentPage.Padding>
+		<OnPlatform x:TypeArguments="Thickness" iOS="0,20,0,0" />
+	</ContentPage.Padding>
+<!--	<Label Text="Welcome to Xamarin Forms!" VerticalOptions="Center" HorizontalOptions="Center" />-->
+
+	<!--<StackLayout Margin="20">
+		<Entry Placeholder="chat" Keyboard="Chat" TextChanged="Handle_TextChanged" />
+		<Entry Placeholder="default" Keyboard="Default" Completed="Handle_Completed" />
+		<Entry Placeholder="number" Keyboard="Numeric" />
+		<Entry Placeholder="text" Keyboard="Text" />
+		<Entry Placeholder="url" Keyboard="Url" />
+		<Entry Placeholder="Phone" Keyboard="Telephone" />
+		<Entry Placeholder="Email" Keyboard="Email" />
+		<Entry Placeholder="Password" IsPassword="true" />
+	</StackLayout>-->
+
+	<!--<StackLayout Margin="20">
+		<Label Text="備註"/>
+		<Editor BackgroundColor="Yellow" VerticalOptions="FillAndExpand" Completed="Handle_Completed" />
+	</StackLayout>-->
+
+	<StackLayout Margin="20">
+		<cEntry:BlueEntry Placeholder="UserName" Keyboard="Chat" />
+		<cEntry:BlueEntry Placeholder="Phone" Keyboard="Telephone" />
+		<cEntry:BlueEntry Placeholder="Email" Keyboard="Email" />
+		<cEntry:BlueEntry Placeholder="Password" IsPassword="true" />
+	</StackLayout>
+</ContentPage>
